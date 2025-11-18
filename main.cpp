@@ -10,12 +10,29 @@
 *********************************************************************************************/
 
 using namespace std;
+
+/**
+ * @brief affiche le menu principal de l'application
+ */
+void afficherMenu() {
+    cout << endl;
+    cout << "=====MENU PRINCIPAL=======" << endl;
+    cout << " Choisir une option" << endl;
+    cout << "1 - Afficher log sudo" << endl;
+    cout << "2 - Afficher et enregistrer log ssh" << endl;
+    cout << "3 - pocoGetAllLog" << endl;
+    cout << "4 - pocoGetOneLog" << endl;
+    cout << "5 - pocoPostSSHLog" << endl;
+    cout << "0 - Sortir du programme" << endl;
+}
 /**
  * @brief affiche le titre de l'application du programme
  * @return
  */
 int main(){
     cout << "CIEL - Gestion centralisee des logs" << endl;
+    afficherMenu();
     return 0;
+
 }
 
