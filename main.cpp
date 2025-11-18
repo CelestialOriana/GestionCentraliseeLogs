@@ -1,7 +1,8 @@
 #include <iostream>
+#include "main.h"
 /*********************************************************************************************
 * @file main.cpp
-* @brief Programme principal de l'application "Gestion centralisée des logs
+* @brief Programme principal de l'application "Gestion centralisée des logs"
 * @brief Ce programme gère l'affichage d'un menu et le traitement du choix de son utilisateur
 * @author Ah-hong Emmanuel
 * @version v1.0
@@ -9,6 +10,28 @@
 * @date 18/11/2025
 *********************************************************************************************/
 using namespace std;
+
+/**
+ * @brief affiche le titre de l'application du programme
+ * @return
+ */
+int main(){
+    cout << "CIEL - Gestion centralisee des logs" << endl;
+    afficherMenu();
+    int choix;
+    cout << "Quelle est votre choix?" << endl;
+    cin >> choix;
+
+    //gestion des erreurs de saisie
+    if (cin.fail()){
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cout << ">>> ERREUR : vous devez ecrire un nombre uniquement !" << endl;
+        return 0;
+    }
+    traiterChoix(choix);
+    return 0;
+}
 /**
  * @brief affiche le menu principal de l'application
  */
@@ -57,26 +80,3 @@ void traiterChoix(int choix){
             break;
     }
 }
-
-/**
- * @brief affiche le titre de l'application du programme
- * @return
- */
-int main(){
-    cout << "CIEL - Gestion centralisee des logs" << endl;
-    afficherMenu();
-    int choix;
-    cout << "Quelle est votre choix?" << endl;
-    cin >> choix;
-
-    //gestion des erreurs de saisie
-    if (cin.fail()){
-        cin.clear();
-        cin.ignore(1000, '\n');
-        cout << ">>> ERREUR : vous devez ecrire un nombre uniquement !" << endl;
-        return 0;
-    }
-    traiterChoix(choix);
-    return 0;
-}
-

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/GestionCentraliseeLogs.iml" filepath="$PROJECT_DIR$/.idea/GestionCentraliseeLogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GestionCentraliseeLogs-master.iml" filepath="$PROJECT_DIR$/.idea/GestionCentraliseeLogs-master.iml" />
     </modules>
   </component>
 </project>
