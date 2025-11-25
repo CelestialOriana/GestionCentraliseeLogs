@@ -14,11 +14,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #1/3-Ajouter les fichiers sources de votre projet
 set(SRCS
 #   Dossier/classe.cpp
+        Menu/menu.cpp
     )
 
 #2/3-Ajouter les fichiers headers de votre projet
 set(HEADERS
-#   Dossier/classe.h
+        Menu/menu.h
+        #   Dossier/classe.h
     )
 
 #3/3-Ajouter les noms des dossiers de vos modules

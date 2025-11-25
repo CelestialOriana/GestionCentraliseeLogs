@@ -7,21 +7,23 @@
 * @date 18/11/2025
 *********************************************************************************************/
 
-#include <iostream>
-#include "Menu/menu.h"
-
+#pragma once
 /*********************************************************************************************
-* @file main.cpp
-* @brief Programme principal : affiche le menu puis laisse choisirLog() gérer le reste.
+* @file menu.h
+* @brief Déclarations des fonctions du module Menu (affichage et gestion des choix).
 *********************************************************************************************/
 
-using namespace std;
+/**
+ * @brief Affiche le menu principal de l'application.
+ */
+void afficherMenu();
 
-int main() {
-    cout << "CIEL - Gestion centralisee des logs" << endl;
-
-    afficherMenu();
-    choisirLog();
-
-    return 0;
-}
+/**
+ * @brief Demande le choix utilisateur, contrôle la saisie et exécute immédiatement l'action.
+ *
+ * Cette fonction combine l'ancienne logique :
+ *  - lecture du choix
+ *  - gestion des erreurs
+ *  - switch/case pour traiter les options
+ */
+void choisirLog();

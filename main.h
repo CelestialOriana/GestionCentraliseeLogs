@@ -16,3 +16,6 @@ void afficherMenu();
 * @param choix Valeur entrée par l'utilisateur
 */
 void traiterChoix(int choix);
+/**
+*
+*/
