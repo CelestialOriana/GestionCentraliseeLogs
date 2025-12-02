@@ -31,7 +31,6 @@ Il est découpé en plusieurs sprints permettant une mise en place progressive e
 ---
 
 # 📂 Structure du projet
-
 /GestionCentraliseeLogs
 │
 ├── main.cpp
