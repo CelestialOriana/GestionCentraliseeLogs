@@ -15,11 +15,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(SRCS
 #   Dossier/classe.cpp
         Menu/menu.cpp
+        Logs/log.cpp
     )
 
 #2/3-Ajouter les fichiers headers de votre projet
 set(HEADERS
         Menu/menu.h
+        Logs/log.cpp
+        Logs/log.h
         #   Dossier/classe.h
     )
 
