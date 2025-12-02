@@ -1,19 +1,10 @@
-/*********************************************************************************************
-* @file main.h
-* @brief déclaration des fonctions d'affichage et du traitement du menu
-* @author Ah-hong Emmanuel
-* @version v1.0
-* @class BTS CIEL 2
-* @date 18/11/2025
-*********************************************************************************************/
-
 #include <iostream>
 #include "Menu/menu.h"
 
-/*********************************************************************************************
+/**
 * @file main.cpp
 * @brief Programme principal : affiche le menu puis laisse choisirLog() gérer le reste.
-*********************************************************************************************/
+*/
 
 using namespace std;
 
