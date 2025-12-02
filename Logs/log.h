@@ -23,3 +23,17 @@ void testEcritureFichier(const std::string &nomFichier = "test.txt");
  * @param nomFichier Nom du fichier à lire (par défaut "test.txt").
  */
 void testLectureFichier(const std::string &nomFichier = "test.txt");
+
+/**
+ * @brief Affiche dans la console les lignes du fichier /var/log/auth.log
+ *        correspondant aux commandes sudo.
+ *
+ * Cette fonction :
+ *  - ouvre le fichier /var/log/auth.log (ou un chemin passé en paramètre),
+ *  - lit le fichier ligne par ligne,
+ *  - n'affiche que les lignes contenant "sudo".
+ *
+ * @param cheminFichier Chemin du fichier de log d'authentification
+ *        (par défaut "/var/log/auth.log").
+ */
+void sudoLog(const std::string &cheminFichier = "/var/log/auth.log");
